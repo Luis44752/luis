@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Restaurante elegante en la playa, especializado en mariscos y cócteles tropicales.">
+  <meta name="keywords" content="restaurante, playa, mariscos, cócteles, elegante, Bahía 21">
+  <meta name="author" content="Tu Nombre">
+  <title>Bahía 21 | Sabor y Elegancia Costera</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="2doparcial.css">
+</head>
+<body>
+  <!-- Barra de Navegación -->
+ <nav class="navbar navbar-expand-lg sticky-top">
+
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Bahía 21</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#enlaces">Enlaces</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#politicas">Políticas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center text-white bg-overlay py-5">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Bahía 21</h1>
+      <p class="lead">Sabor marino y estilo costero en cada plato</p>
+      <button id="theme-toggle" class="btn btn-warning mt-3"><i class="bi bi-brightness-high-fill"></i></button>
+    </div>
+  </header>
+
+  <!-- Carrusel de fotos -->
+  <section class="container py-5">
+    <div id="carouselBahia" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img src="imagenes\ChatGPT Image 10 jul 2025, 20_45_22.png" class="d-block w-100" alt="Ambiente playero">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes\ChatGPT Image 10 jul 2025, 20_45_25.png" class="d-block w-100" alt="Plato marino">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes\istockphoto-508032520-612x612.jpg" class="d-block w-100" alt="Coctel tropical">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselBahia" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselBahia" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <br>
+    <hr>
+  <section id="reservar" class="text-center py-5">
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalReserva">Reservar Mesa</button>
+</section>
+  <!-- Modal de mesas + precios -->
+<div class="modal fade" id="modalReserva" tabindex="-1" aria-labelledby="modalReservaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalReservaLabel">Tipos de Mesa y Costos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group text-start">
+          <li class="list-group-item">
+           
+            <strong>Mesa Clásica</strong> – Hasta 4 personas 
+             <img src="imagenes\descarga (2).jpg" class=card-img-top  alt="Coctel tropical">
+             <h3>$20.000</h3>
+             <br>
+             <hr>
+          </li>
+          <li class="list-group-item">
+            <strong>Mesa VIP Terraza</strong> – Vista al mar para 6 personas 
+            <img src="imagenes\descarga (1).jpg" class=card-img-top  alt="Coctel tropical">
+            <h3> $35.000</h3>
+            <br>
+            <hr>
+          </li>
+          <li class="list-group-item">
+            <strong>Mesa Romántica</strong> – 2 personas con decoración especial 
+            <img src="imagenes\Las-terrazas-de-Bendinat-49.jpg" class=card-img-top  alt="Coctel tropical">
+            <h3> $25.000</h3>
+            <br>
+            <hr>
+          </li>
+          <li class="list-group-item">
+            <strong>Mesa para Grupo Grande</strong> – Hasta 10 personas
+            <img src="imagenes\descarga.jpg" class=card-img-top  alt="Coctel tropical">
+            <h3> – $60.000</h3>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Reservar Ahora</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </section>
+
+  <!-- Parte de Noticias y eventos -->
+  <section id="noticias" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Noticias y Eventos</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="imagenes\ChatGPT Image 10 jul 2025, 20_45_20.png" class="card-img-top" alt="Evento 1">
+            <div class="card-body">
+              <h1 class="card-title">Noche Electrónica</h1>
+              <p class="card-text">Este 12 de agosto, prepárate para una experiencia única frente al mar. Bahía 21 se transforma por una noche en un escenario de ensueño con luces ambientales, pista de baile sobre la arena y el ritmo envolvente del reconocido DJ Tony Rivers. Disfruta de una selección especial de cócteles exóticos, música electrónica en vivo, juegos de luces y una atmósfera mágica bajo las estrellas.
+No se trata solo de una fiesta, es un ritual de verano: la combinación perfecta entre buena vibra, sabores tropicales y sonido envolvente.
+
+¡Cupos limitados!
+<br>
+No pierdas la oportunidad de vivir esta noche inolvidable.
+<br>
+<hr>
+<i class="bi bi-bag"></i> Comprar Boleta</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="imagenes\ChatGPT Image 10 jul 2025, 20_45_19.png" class="card-img-top" alt="Evento 2">
+            <div class="card-body">
+              <h1 class="card-title">Festival del Ceviche</h1>
+              <p class="card-text">Del 20 al 23 de agosto, Bahía 21 celebra el sabor del mar con el imperdible Festival del Ceviche. Sumérgete en una explosión de frescura y sabor con más de 15 variedades de ceviche: clásico peruano, caribeño con mango, mexicano con jalapeño, nikkei con toques asiáticos y muchas más.
+El festival se llevará a cabo durante el atardecer, permitiéndote disfrutar del ocaso sobre el mar mientras saboreas estas delicias. Además, tendremos música en vivo, maridaje con coctelería de autor y sorpresas para los asistentes.
+
+Ideal para venir en pareja, con amigos o en familia.
+<br>
+Reserva tu lugar y asegura tu degustación completa.
+<hr>
+<br>
+<i class="bi bi-bag"></i> Comprar Boleta
+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="enlaces" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Enlaces de Interés</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://youtu.be/Nz-_cKBabUY?si=bvh4T5MorSwuCUPU" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="ratio ratio-4x3">
+            <iframe src="https://maps.app.goo.gl/4fNz6QY2dDbxNZ9d8" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parte de Contactos-->
+  <section id="contacto" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Contáctanos</h2>
+      <p class="text-center">¿Tienes dudas o quieres hacer una reserva? Escríbenos:</p>
+      <div class="text-center">
+        <a href="mailto:reservas@bahia21.com" class="btn btn-outline-dark">Enviar correo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Políticas de Privacidad en Modal -->
+  <section id="politicas" class="text-center py-5">
+    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalPoliticas">Ver Políticas de Privacidad</button>
+  </section>
+
+  <div class="modal fade" id="modalPoliticas" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Políticas de Privacidad</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>.En Bahía 21, nos tomamos muy en serio la protección de tu información personal. A continuación, te explicamos cómo recopilamos, utilizamos, almacenamos y protegemos tus datos al interactuar con nuestro sitio web. Uso de la Información Recopilada
+La información recopilada será utilizada para:
+
+Procesar solicitudes de contacto o reservas
+
+Enviar promociones u ofertas si así lo autorizas
+
+Mejorar la experiencia de navegación en nuestro sitio
+
+Analizar métricas de tráfico (Google Analytics u otras herramientas)
+
+Detectar y prevenir fraudes o accesos no autorizados
+
+3. Cookies y Tecnologías Similares
+Utilizamos cookies para mejorar tu experiencia en nuestro sitio. Estas cookies nos ayudan a:
+
+Recordar tus preferencias de navegación
+
+Activar el modo oscuro o claro
+
+Realizar análisis estadísticos anónimos
+
+Puedes gestionar o desactivar las cookies directamente desde la configuración de tu navegador.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Redes Sociales  Ig, fcbook, X  -->
+  <section class="text-center bg-dark text-white py-4">
+    <h4>Síguenos en redes</h4>
+    <a href="https://www.facebook.com/" class="text-white m-2"><i class="bi bi-facebook"></i></a>
+    <a href="https://www.instagram.com/" class="text-white m-2"><i class="bi bi-instagram"></i></a>
+    <a href="https://x.com/?lang=es" class="text-white m-2"><i class="bi bi-twitter"></i></a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-secondary text-white">
+    <small>&copy; 2025 Bahía 21. Todos los derechos reservados.</small>
+  </footer>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="2doparcial.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('imagenes/ChatGPT Image 10 jul 2025, 20_45_23.png');
+  color: #313131;
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+}
+
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-image: url('img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.navbar {
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+}
+
+.btn {
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffae42 !important;
+  color: #fff !important;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Hover en enlaces */
+a:hover {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+/* Dark mode */
+.dark-mode {
+ background-color: #000000 !important;
+  color: #ffffff;
+  background-image: url('imagenes/fb6c2aa0-ce57-453a-9447-5f43e87acb87.png');
+}
+.dark-mode footer,
+.dark-mode .bg-dark,
+.dark-mode .modal-content {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .card {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+/* Iframes responsivos */
+.ratio iframe {
+  border-radius: 10px;
+  border: 2px solid #eee;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 250px;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+/* Íconos redes */
+.bi {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.bi:hover {
+  transform: scale(1.2);
+  color: #ffc107;
+}
+
+/* Navbar en modo claro */
+body:not(.dark-mode) .navbar {
+  background: linear-gradient(90deg, rgba(199, 109, 0, 1) 0%, rgba(255, 243, 20, 1) 35%, rgba(173, 241, 255, 1) 100%) !important;
+}
+
+/* Navbar en modo oscuro */
+.dark-mode .navbar {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.dark-mode .navbar a,
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+  color: #fff !important;
+}
